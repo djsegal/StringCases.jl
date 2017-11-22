@@ -45,6 +45,8 @@ test_string = "foo_bar_baz"
 
 @test underscore("foo_bar_baz") == test_string
 
+@test underscore("foo bar baz") == test_string
+
 @test underscore("foo-bar-baz") == test_string
 
 @test underscore("fooBarBaz") == test_string
