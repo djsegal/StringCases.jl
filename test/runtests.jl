@@ -1,5 +1,7 @@
-using Case
 using Base.Test
+
+using StringManipulations
+import StringManipulations._defaultcase
 
 # -------------------
 #  test plain string
@@ -7,7 +9,7 @@ using Base.Test
 
 test_string = "foo BAR bAZ"
 
-@test Case._defaultcase(test_string) == "foo bar baz"
+@test _defaultcase(test_string) == "foo bar baz"
 
 @test spacecase(test_string) == "foo bar baz"
 
@@ -25,7 +27,7 @@ test_string = "foo BAR bAZ"
 
 test_string = "this_var-here"
 
-@test Case._defaultcase(test_string) == "this var here"
+@test _defaultcase(test_string) == "this var here"
 
 @test spacecase(test_string) == "this var here"
 
@@ -67,10 +69,10 @@ test_string = "foo_bar_baz"
 
 test_string = "boo"
 
-@test Case._defaultcase("boo") == test_string
+@test _defaultcase("boo") == test_string
 
-@test Case._defaultcase("  boo") == test_string
+@test _defaultcase("  boo") == test_string
 
-@test Case._defaultcase("boo  ") == test_string
+@test _defaultcase("boo  ") == test_string
 
-@test Case._defaultcase(" boo ") == test_string
+@test _defaultcase(" boo ") == test_string

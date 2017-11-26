@@ -1,6 +1,6 @@
-# Case
+# StringManipulations
 
-[![Build Status](https://travis-ci.org/djsegal/Case.jl.svg?branch=master)](https://travis-ci.org/djsegal/Case.jl) [![codecov.io](http://codecov.io/github/djsegal/Case.jl/coverage.svg?branch=master)](http://codecov.io/github/djsegal/Case.jl?branch=master)
+[![Build Status](https://travis-ci.org/djsegal/StringManipulations.jl.svg?branch=master)](https://travis-ci.org/djsegal/StringManipulations.jl) [![codecov.io](http://codecov.io/github/djsegal/StringManipulations.jl/coverage.svg?branch=master)](http://codecov.io/github/djsegal/StringManipulations.jl?branch=master)
 
 ## Usage
 
