@@ -1,7 +1,8 @@
 using Base.Test
 
-using StringManipulations
-import StringManipulations._defaultcase
+using StringHelpers
+
+import StringHelpers._defaultcase
 
 # -------------------
 #  test plain string

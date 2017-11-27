@@ -1,6 +1,6 @@
 __precompile__()
 
-module StringManipulations
+module StringHelpers
 
   # ============
   #  public api
