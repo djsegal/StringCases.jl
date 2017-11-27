@@ -1,4 +1,4 @@
-The StringHelpers.jl package is licensed under the MIT "Expat" License:
+The Case.jl package is licensed under the MIT "Expat" License:
 
 > Copyright (c) 2017: Dan Segal.
 >

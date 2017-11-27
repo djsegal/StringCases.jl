@@ -1,6 +1,6 @@
 __precompile__()
 
-module StringHelpers
+module Case
 
   # ============
   #  public api
