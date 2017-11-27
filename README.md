@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/djsegal/StringHelpers.jl.svg?branch=master)](https://travis-ci.org/djsegal/StringHelpers.jl) [![codecov.io](http://codecov.io/github/djsegal/StringHelpers.jl/coverage.svg?branch=master)](http://codecov.io/github/djsegal/StringHelpers.jl?branch=master)
 
+simple string helper methods for julia
+
+// inspired by ember.js [string helpers](www.emberjs.com/api/classes/Ember.String.html)
+
 ## Usage
 
 #### blankcase(cur_string)
@@ -27,19 +31,25 @@ kebabcase(cur_string)
 
 ```
 
-#### underscore(cur_string)
+#### transformcase(cur_string)
 
 ```julia
 
-cur_string = "foo_bar_baz"
+cur_string = "css-class-name"
 
-underscore("fooBarBaz")
-# => "foo_bar_baz"
+camelize("css-class-name")
+# => "cssClassName"
 
-underscore("foo bar baz")
-# => "foo_bar_baz"
+capitalize("css-class-name")
+# => "Css-class-name"
 
-underscore("foo-bar-baz")
-# => "foo_bar_baz"
+classify("css-class-name")
+# => "CssClassName"
+
+dasherize("css-class-name")
+# => "css-class-name"
+
+underscore("css-class-name")
+# => "css_class_name"
 
 ```

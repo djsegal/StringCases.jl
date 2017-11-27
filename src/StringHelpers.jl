@@ -13,7 +13,11 @@ module StringHelpers
   export camelcase, pascalcase
   export snakecase, kebabcase
 
-  export underscore
+  export underscore, dasherize
+
+  export camelize, decamelize
+
+  export capitalize, classify
 
   # ===========
   #  core load
@@ -24,5 +28,7 @@ module StringHelpers
 
   include("public/index.jl")
   include("private/index.jl")
+
+  decamelize = _decamelize
 
 end

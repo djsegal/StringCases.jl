@@ -3,6 +3,7 @@ using Base.Test
 using StringHelpers
 
 import StringHelpers._defaultcase
+import StringHelpers._decamelize
 
 # -------------------
 #  test plain string
@@ -62,7 +63,55 @@ test_string = "foo_bar_baz"
 
 @test underscore("aModel") == "a_model"
 
-@test underscore("AModel") == "a_model"
+@test underscore("AModel") == "amodel"
+
+# -----------------
+#  test dasherize
+# -----------------
+
+test_string = "foo-bar-baz"
+
+@test dasherize("foo_bar_baz") == test_string
+
+@test dasherize("foo bar baz") == test_string
+
+@test dasherize("foo-bar-baz") == test_string
+
+@test dasherize("fooBarBaz") == test_string
+
+@test dasherize("FooBarBaz") == test_string
+
+@test dasherize("modelA") == "model-a"
+
+@test dasherize("ModelA") == "model-a"
+
+@test dasherize("aModel") == "a-model"
+
+@test dasherize("AModel") == "amodel"
+
+# -----------------
+#  test decamelize
+# -----------------
+
+test_string = "foo_bar_baz"
+
+@test _decamelize("foo_bar_baz") == test_string
+
+@test _decamelize("foo bar baz") == "foo bar baz"
+
+@test _decamelize("foo-bar-baz") == "foo-bar-baz"
+
+@test _decamelize("fooBarBaz") == test_string
+
+@test _decamelize("FooBarBaz") == test_string
+
+@test _decamelize("modelA") == "model_a"
+
+@test _decamelize("ModelA") == "model_a"
+
+@test _decamelize("aModel") == "a_model"
+
+@test _decamelize("AModel") == "amodel"
 
 # -------------
 #  test spaces
@@ -77,3 +126,10 @@ test_string = "boo"
 @test _defaultcase("boo  ") == test_string
 
 @test _defaultcase(" boo ") == test_string
+
+# ============
+#  tests from
+#   ember.js
+# ============
+
+include("ember_js_test.jl")
