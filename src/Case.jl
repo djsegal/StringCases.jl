@@ -23,12 +23,12 @@ module Case
   #  core load
   # ===========
 
-  upcase = uppercase
-  downcase = lowercase
+  const upcase = uppercase
+  const downcase = lowercase
 
   include("public/index.jl")
   include("private/index.jl")
 
-  decamelize = _decamelize
+  const decamelize = _decamelize
 
 end
