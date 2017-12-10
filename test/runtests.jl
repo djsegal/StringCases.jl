@@ -1,9 +1,9 @@
 using Base.Test
 
-using Case
+using StringCases
 
-import Case._defaultcase
-import Case._decamelize
+import StringCases._defaultcase
+import StringCases._decamelize
 
 # -------------------
 #  test plain string

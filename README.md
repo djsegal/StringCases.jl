@@ -1,6 +1,6 @@
-# Case
+# StringCases
 
-[![Build Status](https://travis-ci.org/djsegal/Case.jl.svg?branch=master)](https://travis-ci.org/djsegal/Case.jl) [![codecov.io](http://codecov.io/github/djsegal/Case.jl/coverage.svg?branch=master)](http://codecov.io/github/djsegal/Case.jl?branch=master)
+[![Build Status](https://travis-ci.org/djsegal/StringCases.jl.svg?branch=master)](https://travis-ci.org/djsegal/StringCases.jl) [![codecov.io](http://codecov.io/github/djsegal/StringCases.jl/coverage.svg?branch=master)](http://codecov.io/github/djsegal/StringCases.jl?branch=master)
 
 simple string helper methods for julia
 
