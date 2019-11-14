@@ -1,15 +1,24 @@
-using Base.Test
+using Pkg
+Pkg.activate(".")
+
+using Revise
+
+using Test
 
 using StringCases
 
 import StringCases._defaultcase
 import StringCases._decamelize
 
+
+
 # -------------------
 #  test plain string
 # -------------------
 
 test_string = "foo BAR bAZ"
+
+StringCases.camelize("dwed_dewew")
 
 @test _defaultcase(test_string) == "foo bar baz"
 
