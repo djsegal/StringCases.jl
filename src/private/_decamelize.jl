@@ -1,5 +1,5 @@
 function _decamelize(cur_string::AbstractString)
-  capital_letters = matchall(r"[A-Z]+", cur_string)
+  capital_letters = collect(m.match for m in eachmatch(r"[A-Z]+", cur_string))
   capital_letters = map(x -> downcase(x), capital_letters)
 
   lowercase_phrases = split(cur_string, r"([A-Z]+)")
