@@ -1,10 +1,4 @@
-using Pkg
-Pkg.activate(".")
-
-using Revise
-
 using Test
-
 using StringCases
 
 import StringCases._defaultcase
