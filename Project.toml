@@ -1,4 +1,4 @@
 name = "StringCases"
 uuid = "f22f4433-750e-5048-95f9-cae576f2c120"
 authors = ["Dan Segal <dan@seg.al>", "Vincent Laugier <vincent.laugier@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
